@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal dan Pengurus Kelas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #006400; /* Hijau tua */
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff0000; /* Merah */
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .schedule, .class-officers {
+            margin-bottom: 20px;
+        }
+
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff; /* Putih */
+            color: #000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .schedule table th, .schedule table td {
+            border: 1px solid #000;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .schedule table th {
+            background-color: #ffcccb; /* Merah muda */
+            color: #000;
+        }
+
+        .schedule table tr:nth-child(even) {
+            background-color: #d6eeee; /* Biru muda */
+        }
+
+        .schedule table tr:nth-child(odd) {
+            background-color: #f7f7c6; /* Kuning muda */
+        }
+
+        .class-officers ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .class-officers li {
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #0000ff; /* Biru */
+            color: white;
+            border-radius: 5px;
+        }
+
+        nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ff0000; /* Merah */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jadwal dan Pengurus Kelas</h1>
+    </header>
+
+    <div class="container">
+        <div class="schedule">
+            <h2>Jadwal Mata Pelajaran</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Jam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin</td>
+                        <td>Bahasa Indonesia</td>
+                        <td>08:00 - 10:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Matematika</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>IPS</td>
+                        <td>12:00 - 15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa</td>
+                        <td>Bahasa Inggris</td>
+                        <td>08:00 - 10:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>IPA</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Seni Budaya</td>
+                        <td>12:00 - 15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu</td>
+                        <td>Pendidikan Agama</td>
+                        <td>08:00 - 10:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Matematika</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>PJOK</td>
+                        <td>12:00 - 15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis</td>
+                        <td>IPA</td>
+                        <td>08:00 - 10:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bahasa Indonesia</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>TIK</td>
+                        <td>12:00 - 15:00</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat</td>
+                        <td>Pendidikan Agama</td>
+                        <td>08:00 - 10:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Pramuka</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu</td>
+                        <td>Senam</td>
+                        <td>07:00 - 08:00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Kegiatan</td>
+                        <td>08:00 - 09:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="class-officers">
+            <h2>Class Tunggawarman</h2>
+            <ul>
+                <li>Ketua: Reyhan Esa Ramadhani</li>
+                <li>Wakil Ketua: Ripaldi</li>
+                <li>Ketua Keamanan: Aras</li>
+                <li>Ketua Kebersihan: Yunus</li>
+                <li>Sekretaris: Yonatan</li>
+                <li>Bendahara: Zaskia Maharani</li>
+                <li>Wali Kelas: Bimba Dhiwangkara</li>
+            </ul>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#schedule">Jadwal</a>
+        <a href="#class-officers">Pengurus</a>
+    </nav>
+</body>
+</html>
